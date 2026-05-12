@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi Arruda — Dev & DevOps</title>
+  <meta name="description" content="Portfólio de Davi Arruda — Desenvolvedor de Software e DevOps, estudante de Ciência da Computação na CESAR School." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="logo">davi<span>.</span>dev</div>
+  <button class="nav-toggle" aria-label="menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="navmenu">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#tools">Ferramentas</a></li>
+    <li><a href="#contact" class="nav-cta">Contato →</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hbc-1 hero-bg-circle"></div>
+  <div class="hbc-2 hero-bg-circle"></div>
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT: texto -->
+      <div class="hero-left">
+        <p class="hero-eyebrow reveal">Ciência da Computação · CESAR School</p>
+        <h1 class="hero-name reveal reveal-delay-1">
+          Davi<br><span class="accent">Arruda</span>
+        </h1>
+        <p class="hero-tagline reveal reveal-delay-2">
+          Construindo sistemas que <strong>funcionam de verdade</strong> — do código ao container, da pipeline ao produto. Automação não é atalho, é <strong>engenharia com propósito</strong>.
+        </p>
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a href="#projects" class="btn btn-primary">Ver Projetos →</a>
+          <a href="https://github.com/daviaarrudaofc" target="_blank" class="btn btn-outline">GitHub ↗</a>
+          <a href="#contact" class="btn btn-ghost">Contato</a>
+        </div>
+        <div class="hero-social reveal reveal-delay-4">
+          <a href="https://www.linkedin.com/in/davi-arruda-beltrao" target="_blank" class="social-chip">💼 LinkedIn</a>
+          <a href="mailto:daviarruda092@gmail.com" class="social-chip">✉️ Email</a>
+          <span class="available-dot"><span class="dot-pulse"></span> Disponível para estágio</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: foto + code card -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <img src="img/davi.jpg" alt="Davi Arruda" class="hero-photo" />
+          <div class="hero-photo-badge">
+            <span class="badge-icon">⚙️</span>
+            <span class="badge-text">DevOps · Dev</span>
+          </div>
+        </div>
+        <div class="hero-code-card">
+          <div class="card-top">
+            <div class="card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-lang">pipeline.yml</span>
+          </div>
+          <div class="code-lines">
+            <div class="code-line"><span class="cm"># CI/CD · Docker · Prometheus</span></div>
+            <div class="code-line"><span class="kw">on</span>: <span class="fn">push</span> → <span class="str">main</span></div>
+            <div class="code-line"><span class="kw">steps</span>:</div>
+            <div class="code-line">&nbsp;&nbsp;- <span class="fn">checkout</span> → <span class="str">build</span></div>
+            <div class="code-line">&nbsp;&nbsp;- <span class="fn">docker push</span> <span class="num">✓</span></div>
+            <div class="code-line">&nbsp;&nbsp;- <span class="fn">deploy</span> → <span class="str">k8s</span> <span class="cursor-blink"></span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<div id="stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num"><span class="count" data-target="500">0</span><span class="stat-suffix">+</span></div>
+        <div class="stat-label">Horas de Código</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="count" data-target="120">0</span><span class="stat-suffix">+</span></div>
+        <div class="stat-label">Commits</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="count" data-target="4">0</span></div>
+        <div class="stat-label">Projetos no GitHub</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="count" data-target="8">0</span></div>
+        <div class="stat-label">Tecnologias Core</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="sec-header">
+          <p class="sec-tag reveal">01 / sobre</p>
+          <h2 class="sec-title reveal reveal-delay-1">Desenvolvedor com<br>mentalidade <span style="color:var(--accent)">DevOps</span></h2>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <p>Estudante de <strong>Ciência da Computação na CESAR School</strong>, em Recife. Meu foco é desenvolvimento de software orientado à infraestrutura — acredito que código bom não existe sem um ambiente bem orquestrado.</p>
+          <p>Me dedico a <strong>automação de pipelines CI/CD</strong>, orquestração de containers e monitoramento em tempo real. Não é só "fazer funcionar" — é fazer funcionar com <strong>observabilidade, escala e resiliência</strong>.</p>
+          <p>Atualmente me preparando para a certificação <strong>AWS Certified Developer</strong>, consolidando conhecimento em cloud-native e infraestrutura como código.</p>
+        </div>
+        <div class="about-pills reveal reveal-delay-3">
+          <span class="pill">Automação CI/CD</span>
+          <span class="pill">Observabilidade</span>
+          <span class="pill">Containers</span>
+          <span class="pill pill-accent">☁ AWS Developer (em progresso)</span>
+          <span class="pill">IaC</span>
+          <span class="pill">Sistemas Distribuídos</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-card reveal reveal-delay-1">
+          <div class="about-card-icon">🎓</div>
+          <h4>CESAR School</h4>
+          <p>Bacharelado em Ciência da Computação — formação técnica rigorosa com foco em inovação e resolução de problemas reais.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="about-card-icon">🔁</div>
+          <h4>DevOps First</h4>
+          <p>Do pull request ao container em produção — automação, versionamento e deploy contínuo são parte do meu workflow padrão.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-3">
+          <div class="about-card-icon">☁️</div>
+          <h4>AWS Certified Developer</h4>
+          <p>Em preparação ativa para a certificação. Estudando EC2, Lambda, ECS, CloudFormation e melhores práticas de arquitetura serverless.</p>
+          <span class="aws-badge">☁ AWS · Em Progresso</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-header">
+      <p class="sec-tag reveal">02 / projetos</p>
+      <h2 class="sec-title reveal reveal-delay-1">Código que resolve<br>problemas <span style="color:var(--accent)">reais</span></h2>
+      <p class="sec-sub reveal reveal-delay-2">Projetos construídos com foco em automação, infraestrutura e boas práticas de engenharia de software.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- FEATURED -->
+      <div class="project-card featured reveal">
+        <div class="featured-left">
+          <span class="featured-badge">★ Projeto Destaque</span>
+          <div class="project-number">01 / github.com/daviaarrudaofc</div>
+          <h3 class="project-name">devops-pipeline-<br>observability</h3>
+          <p class="project-context">Simulação de ambiente real de DevOps · CI/CD + Containers + Monitoring</p>
+          <p class="project-desc">Este projeto simula um ambiente real de DevOps, focando na automação do ciclo de vida de uma aplicação — do commit ao deploy. Implementa CI/CD completo com GitHub Actions, orquestração de containers com Docker e monitoramento em tempo real com Prometheus e Grafana.</p>
+          <div class="project-tags">
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Python</span>
+          </div>
+          <a href="https://github.com/daviaarrudaofc/devops-pipeline-observability" target="_blank" class="project-link">Ver no GitHub →</a>
+        </div>
+        <div class="featured-right">
+          <div class="feat-label">Pipeline Flow</div>
+          <div class="pipeline-diagram">
+            <div class="pip-step">📝 Commit</div>
+            <div class="pip-arrow">→</div>
+            <div class="pip-step">🔄 CI Build</div>
+            <div class="pip-arrow">→</div>
+            <div class="pip-step">🐳 Docker</div>
+            <div class="pip-arrow">→</div>
+            <div class="pip-step">🚀 Deploy</div>
+            <div class="pip-arrow">→</div>
+            <div class="pip-step">📊 Monitor</div>
+          </div>
+          <div class="feat-divider"></div>
+          <div class="feat-label">Stack de Observabilidade</div>
+          <div class="obs-stack">
+            <div class="obs-row"><span>Prometheus Scrape</span><span class="status-ok">● ativo</span></div>
+            <div class="obs-row"><span>Grafana Dashboard</span><span class="status-ok">● ativo</span></div>
+            <div class="obs-row"><span>GitHub Actions CI</span><span class="status-ok">● passando</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-number">02</div>
+        <h3 class="project-name">GeoStream-Recife</h3>
+        <p class="project-context">Plataforma Geoespacial · Streaming de Dados</p>
+        <p class="project-desc">Plataforma web para visualização e análise de dados geoespaciais em tempo real na cidade de Recife. Integra mapas interativos, dados de sensores IoT e dashboards para monitoramento urbano.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Leaflet</span>
+          <span class="tag">WebSockets</span>
+        </div>
+        <a href="https://github.com/daviaarrudaofc/GeoStream-Recife" target="_blank" class="project-link">Ver no GitHub →</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-number">03</div>
+        <h3 class="project-name">ACP OO 2026.1</h3>
+        <p class="project-context">Sistema Acadêmico · POO Avançada</p>
+        <p class="project-desc">Sistema de controle acadêmico com gestão de alunos, cursos e notas. Implementado com princípios OOP avançados e expandido com tecnologias modernas — Spring Boot, React e Docker — para uma arquitetura full-stack completa.</p>
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">React</span>
+          <span class="tag">Docker</span>
+          <span class="tag">JUnit</span>
+        </div>
+        <a href="https://github.com/daviaarrudaofc/ACPOO20261" target="_blank" class="project-link">Ver no GitHub →</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-number">04</div>
+        <h3 class="project-name">Automação com Python</h3>
+        <p class="project-context">Scripts · Automação de Processos</p>
+        <p class="project-desc">Scripts Python para automação de tarefas repetitivas — coleta de dados, relatórios automatizados e integração com APIs externas. Redução significativa de trabalho manual em processos operacionais.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Pandas</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TOOLS ── -->
+<section id="tools">
+  <div class="container">
+    <div class="sec-header">
+      <p class="sec-tag reveal">03 / ferramentas</p>
+      <h2 class="sec-title reveal reveal-delay-1">Stack técnico</h2>
+      <p class="sec-sub reveal reveal-delay-2">As principais tecnologias do meu dia a dia — do desenvolvimento à infraestrutura.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card reveal">
+        <div class="tool-icon">☕</div>
+        <div class="tool-name">Java</div>
+        <div class="tool-level">Backend · Spring</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:80%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-1">
+        <div class="tool-icon">🐍</div>
+        <div class="tool-name">Python</div>
+        <div class="tool-level">Scripts · Automação</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:78%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-2">
+        <div class="tool-icon">🐳</div>
+        <div class="tool-name">Docker</div>
+        <div class="tool-level">Containers · Compose</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:72%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-3">
+        <div class="tool-icon">⚙️</div>
+        <div class="tool-name">GitHub Actions</div>
+        <div class="tool-level">CI/CD · Automação</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:70%"></div></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon">📊</div>
+        <div class="tool-name">Prometheus</div>
+        <div class="tool-level">Monitoramento</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:65%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-1">
+        <div class="tool-icon">📈</div>
+        <div class="tool-name">Grafana</div>
+        <div class="tool-level">Dashboards</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:63%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-2">
+        <div class="tool-icon">🐧</div>
+        <div class="tool-name">Linux</div>
+        <div class="tool-level">Infra · Shell</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:76%"></div></div>
+      </div>
+      <div class="tool-card reveal reveal-delay-3">
+        <div class="tool-icon">☁️</div>
+        <div class="tool-name">AWS</div>
+        <div class="tool-level">Cloud · Em certificação</div>
+        <div class="tool-bar"><div class="tool-fill" style="--w:55%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <p class="sec-tag reveal">04 / contato</p>
+        <h2 class="contact-headline reveal reveal-delay-1">Vamos construir<br>algo <span class="accent">juntos?</span></h2>
+        <p class="contact-sub reveal reveal-delay-2">Aberto a oportunidades de estágio, colaborações em projetos open source e conversas sobre DevOps, infraestrutura e desenvolvimento de software.</p>
+        <div class="contact-links reveal reveal-delay-3">
+          <a href="mailto:daviarruda092@gmail.com" class="contact-link">
+            <div class="contact-link-icon">✉️</div>
+            <div class="contact-link-info">
+              <div class="contact-link-label">E-mail</div>
+              <div class="contact-link-value">daviarruda092@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/davi-arruda-beltrao" target="_blank" class="contact-link">
+            <div class="contact-link-icon">💼</div>
+            <div class="contact-link-info">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/davi-arruda-beltrao</div>
+            </div>
+          </a>
+          <a href="https://github.com/daviaarrudaofc" target="_blank" class="contact-link">
+            <div class="contact-link-icon">🐙</div>
+            <div class="contact-link-info">
+              <div class="contact-link-label">GitHub Projetos</div>
+              <div class="contact-link-value">github.com/daviaarrudaofc</div>
+            </div>
+          </a>
+          <a href="https://github.com/daviaarruda" target="_blank" class="contact-link">
+            <div class="contact-link-icon">🐙</div>
+            <div class="contact-link-info">
+              <div class="contact-link-label">GitHub Pessoal</div>
+              <div class="contact-link-value">github.com/daviaarruda</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="terminal-box reveal reveal-delay-2">
+        <div class="terminal-bar">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          <span>terminal — bash</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">whoami</span></div>
+          <div class="t-out">→ Davi Arruda · Software Dev + DevOps</div>
+          <br>
+          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">cat status.txt</span></div>
+          <div class="t-out">→ <span class="t-acc">disponível para estágio</span></div>
+          <br>
+          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">cat certifications.txt</span></div>
+          <div class="t-out">→ AWS Certified Developer <span class="t-acc">[em progresso]</span></div>
+          <br>
+          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">contact --email</span></div>
+          <div class="t-out">→ <span class="t-link">daviarruda092@gmail.com</span></div>
+          <br>
+          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">contact --linkedin</span></div>
+          <div class="t-out">→ <span class="t-link">linkedin.com/in/davi-arruda-beltrao</span></div>
+          <br>
+          <div><span class="t-prompt">~/davi</span> $ <span class="cursor-blink"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <p>© 2025 <strong>Davi Arruda</strong> · Feito com código, café e muita pipeline ☕ · CESAR School, Recife — <a href="https://github.com/daviaarrudaofc" target="_blank" style="color:var(--accent)">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
