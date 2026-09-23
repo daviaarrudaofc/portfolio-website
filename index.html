@@ -3,401 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>davi.dev</title>
+  <meta name="theme-color" content="#17211f" />
+  <meta name="description" content="Portfólio de Davi Arruda. Engenharia de software backend com Java, Spring Boot, APIs RESTful, bancos de dados, segurança e evolução em AWS." />
+  <title>Davi Arruda | Engenharia de Software Backend</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-  <meta name="description" content="Portfólio de Davi Arruda — Desenvolvedor de Software e DevOps, estudante de Ciência da Computação na CESAR School." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-<!-- ── NAV ── -->
-<nav id="nav">
-  <div class="logo">davi<span>.</span>dev</div>
-  <button class="nav-toggle" aria-label="menu" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </button>
-  <ul id="navmenu">
-    <li><a href="#about">Sobre</a></li>
-    <li><a href="#projects">Projetos</a></li>
-    <li><a href="#tools">Ferramentas</a></li>
-    <li><a href="#contact" class="nav-cta">Contato →</a></li>
-  </ul>
-</nav>
+  <header class="site-header" id="topo">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#topo" aria-label="Davi Arruda, voltar ao início">davi<span>.</span>dev</a>
+      <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#direcao">Direção</a>
+        <a href="#cursos">Cursos</a>
+        <a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-<!-- ── HERO ── -->
-<section id="hero">
-  <div class="hbc-1 hero-bg-circle"></div>
-  <div class="hbc-2 hero-bg-circle"></div>
-  <div class="container">
-    <div class="hero-grid">
-
-      <!-- LEFT: texto -->
-      <div class="hero-left">
-        <p class="hero-eyebrow reveal">Ciência da Computação · CESAR School</p>
-        <h1 class="hero-name reveal reveal-delay-1">
-          Davi<br><span class="accent">Arruda</span>
-        </h1>
-        <p class="hero-tagline reveal reveal-delay-2">
-          Construindo sistemas que <strong>funcionam de verdade</strong> — do código ao container, da pipeline ao produto. Automação não é atalho, é <strong>engenharia com propósito</strong>.
-        </p>
-        <div class="hero-ctas reveal reveal-delay-3">
-          <a href="#projects" class="btn btn-primary">Ver Projetos →</a>
-          <a href="https://github.com/daviaarrudaofc" target="_blank" class="btn btn-outline">GitHub ↗</a>
-          <a href="#contact" class="btn btn-ghost">Contato</a>
-        </div>
-        <div class="hero-social reveal reveal-delay-4">
-          <a href="https://www.linkedin.com/in/davi-arruda-beltrao" target="_blank" class="social-chip">💼 LinkedIn</a>
-          <a href="mailto:daviarruda092@gmail.com" class="social-chip">✉️ Email</a>
-          <span class="available-dot"><span class="dot-pulse"></span> Disponível para estágio</span>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="img/davi.jpg" alt="Retrato de Davi Arruda" fetchpriority="high" />
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="signal" aria-hidden="true"></span> Engenharia de software / Recife, PE</p>
+        <h1 id="hero-title">Davi<br><span>Arruda.</span></h1>
+        <p class="hero-role">Engenharia de software backend<br>com Java no centro.</p>
+        <p class="hero-copy">Estudante de Ciência da Computação na CESAR School. Construo APIs RESTful com Spring Boot, integro aplicações a bancos de dados e pratico testes para transformar ideias em software consistente.</p>
+        <p class="hero-next">Agora avanço em segurança, documentação de APIs, observabilidade e entrega com Docker e AWS.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://github.com/daviaarrudaofc" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
+      <div class="hero-bottom container" aria-label="Resumo">
+        <span>Java &amp; Spring Boot</span>
+        <span>APIs RESTful &amp; dados</span>
+        <span>Segurança &amp; cloud em evolução</span>
+      </div>
+    </section>
 
-      <!-- RIGHT: foto + code card -->
-      <div class="hero-visual reveal reveal-delay-2">
-        <div class="hero-photo-wrap">
-          <div class="hero-photo-ring"></div>
-          <img src="img/davi.jpg" alt="Davi Arruda" class="hero-photo" />
-          <div class="hero-photo-badge">
-            <span class="badge-icon">⚙️</span>
-            <span class="badge-text">DevOps · Dev</span>
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">01 / Sobre</p>
+          <h2 id="about-title">Da ideia à API,<br>com Java<span class="accent">.</span></h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-lead">
+            <p>Meu foco está no <strong>backend com Java e Spring Boot</strong>. Tenho transformado ideias em APIs RESTful, conectando regras de negócio a bancos de dados e organizando o código para que cada parte tenha uma responsabilidade clara.</p>
+            <p>Na prática, estudo modelagem de domínio, persistência com JPA e Hibernate, contratos HTTP e tratamento de erros. Também venho trabalhando com testes unitários e de integração para verificar o comportamento da aplicação, não apenas fazê-la iniciar.</p>
+            <p>Meu próximo passo é aprofundar a camada de segurança: autenticação e autorização com Spring Security, OAuth2 e JWT, além de login social, Authorization Server e integração entre Spring Boot 4 e Keycloak. Quero levar essas decisões até a documentação, a operação e o deploy.</p>
+          </div>
+          <div class="principles" aria-label="Áreas de prática e estudo">
+            <div class="principle"><span>01</span><div><h3>Construindo agora</h3><p>APIs RESTful, integração com banco de dados e persistência no ecossistema Spring.</p></div></div>
+            <div class="principle"><span>02</span><div><h3>Aprofundando</h3><p>Testes, Spring Security, OAuth2 com JWT, Keycloak e identidade.</p></div></div>
+            <div class="principle"><span>03</span><div><h3>Levando adiante</h3><p>OpenAPI, logs, métricas com Actuator, Docker e deploy em cloud.</p></div></div>
           </div>
         </div>
-        <div class="hero-code-card">
-          <div class="card-top">
-            <div class="card-dots">
-              <span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-intro section-intro-split">
+          <div><p class="eyebrow">02 / Projetos</p><h2 id="projects-title">O que estou<br>construindo<span class="accent">.</span></h2></div>
+          <p>Experimentos, aplicações e sistemas que mostram como transformo estudo em implementação.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-row project-row-featured">
+            <div class="project-index">01 <span>/ Backend + IA</span></div>
+            <div class="project-main">
+              <h3>Spring AI + Ollama</h3>
+              <p>Um laboratório em Java para integrar modelos locais a uma aplicação com Spring AI. Exploro como expor recursos de IA por meio de uma estrutura de backend.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>Java</li><li>Spring AI</li><li>Ollama</li></ul>
             </div>
-            <span class="card-lang">pipeline.yml</span>
-          </div>
-          <div class="code-lines">
-            <div class="code-line"><span class="cm"># CI/CD · Docker · Prometheus</span></div>
-            <div class="code-line"><span class="kw">on</span>: <span class="fn">push</span> → <span class="str">main</span></div>
-            <div class="code-line"><span class="kw">steps</span>:</div>
-            <div class="code-line">&nbsp;&nbsp;- <span class="fn">checkout</span> → <span class="str">build</span></div>
-            <div class="code-line">&nbsp;&nbsp;- <span class="fn">docker push</span> <span class="num">✓</span></div>
-            <div class="code-line">&nbsp;&nbsp;- <span class="fn">deploy</span> → <span class="str">k8s</span> <span class="cursor-blink"></span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── STATS ── -->
-<div id="stats">
-  <div class="container">
-    <div class="stats-row">
-      <div class="stat-item">
-        <div class="stat-num"><span class="count" data-target="500">0</span><span class="stat-suffix">+</span></div>
-        <div class="stat-label">Horas de Código</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num"><span class="count" data-target="120">0</span><span class="stat-suffix">+</span></div>
-        <div class="stat-label">Commits</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num"><span class="count" data-target="5">0</span></div>
-        <div class="stat-label">Projetos no GitHub</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num"><span class="count" data-target="8">0</span></div>
-        <div class="stat-label">Tecnologias Core</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ── ABOUT ── -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left">
-        <div class="sec-header">
-          <p class="sec-tag reveal">01 / sobre</p>
-          <h2 class="sec-title reveal reveal-delay-1">Desenvolvedor com<br>mentalidade <span style="color:var(--accent)">DevOps</span></h2>
-        </div>
-        <div class="about-text reveal reveal-delay-2">
-          <p>Estudante de <strong>Ciência da Computação na CESAR School</strong>, em Recife. Meu foco é o desenvolvimento de software orientado à infraestrutura — acredito que código de qualidade exige um ambiente bem orquestrado.</p>
-          <p>Atualmente, estou aprofundando meus estudos no ecossistema <strong>Java (Spring Boot, Hibernate e JPA)</strong> e persistência com <strong>MongoDB</strong>. Paralelamente, me dedico a aprender <strong>automação de pipelines CI/CD</strong> e orquestração de containers, focando em conceitos de <strong>observabilidade, escala e resiliência</strong>.</p>
-          <p>Sigo me preparando para a certificação <strong>AWS Certified Developer</strong>, consolidando conhecimentos em cloud-native e infraestrutura como código para construir aplicações prontas para a nuvem.</p>
-        </div>
-        <div class="about-pills reveal reveal-delay-3">
-          <span class="pill">Automação CI/CD</span>
-          <span class="pill">Observabilidade</span>
-          <span class="pill">Containers</span>
-          <span class="pill pill-accent">☁ AWS Developer (em progresso)</span>
-          <span class="pill">IaC</span>
-          <span class="pill">Sistemas Distribuídos</span>
-        </div>
-      </div>
-      <div class="about-right">
-        <div class="about-card reveal reveal-delay-1">
-          <div class="about-card-icon">🎓</div>
-          <h4>CESAR School</h4>
-          <p>Bacharelado em Ciência da Computação — formação técnica rigorosa com foco em inovação e resolução de problemas reais.</p>
-        </div>
-        <div class="about-card reveal reveal-delay-2">
-          <div class="about-card-icon">🔁</div>
-          <h4>DevOps First</h4>
-          <p>Do pull request ao container em produção — automação, versionamento e deploy contínuo são parte do meu workflow padrão.</p>
-        </div>
-        <div class="about-card reveal reveal-delay-3">
-          <div class="about-card-icon">☁️</div>
-          <h4>AWS Certified Developer</h4>
-          <p>Em preparação ativa para a certificação. Estudando EC2, Lambda, ECS, CloudFormation e melhores práticas de arquitetura serverless.</p>
-          <span class="aws-badge">☁ AWS · Em Progresso</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROJECTS ── -->
-<section id="projects">
-  <div class="container">
-    <div class="sec-header">
-      <p class="sec-tag reveal">02 / projetos</p>
-      <h2 class="sec-title reveal reveal-delay-1">Código que resolve<br>problemas <span style="color:var(--accent)">reais</span></h2>
-      <p class="sec-sub reveal reveal-delay-2">Projetos construídos com foco em automação, infraestrutura e boas práticas de engenharia de software.</p>
-    </div>
-    <div class="projects-grid">
-
-      <!-- FEATURED -->
-      <div class="project-card featured reveal">
-        <div class="featured-left">
-          <span class="featured-badge">★ Projeto Destaque</span>
-          <div class="project-number">01 / github.com/daviaarrudaofc</div>
-          <h3 class="project-name">devops-pipeline-<br>observability</h3>
-          <p class="project-context">Simulação de ambiente real de DevOps · CI/CD + Containers + Monitoring</p>
-          <p class="project-desc">Este projeto simula um ambiente real de DevOps, focando na automação do ciclo de vida de uma aplicação — do commit ao deploy. Implementa CI/CD completo com GitHub Actions, orquestração de containers com Docker e monitoramento em tempo real com Prometheus e Grafana.</p>
-          <div class="project-tags">
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Prometheus</span>
-            <span class="tag">Grafana</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Python</span>
-          </div>
-          <a href="https://github.com/daviaarrudaofc/devops-pipeline-observability" target="_blank" class="project-link">Ver no GitHub →</a>
-        </div>
-        <div class="featured-right">
-          <div class="feat-label">Pipeline Flow</div>
-          <div class="pipeline-diagram">
-            <div class="pip-step">📝 Commit</div>
-            <div class="pip-arrow">→</div>
-            <div class="pip-step">🔄 CI Build</div>
-            <div class="pip-arrow">→</div>
-            <div class="pip-step">🐳 Docker</div>
-            <div class="pip-arrow">→</div>
-            <div class="pip-step">🚀 Deploy</div>
-            <div class="pip-arrow">→</div>
-            <div class="pip-step">📊 Monitor</div>
-          </div>
-          <div class="feat-divider"></div>
-          <div class="feat-label">Stack de Observabilidade</div>
-          <div class="obs-stack">
-            <div class="obs-row"><span>Prometheus Scrape</span><span class="status-ok">● ativo</span></div>
-            <div class="obs-row"><span>Grafana Dashboard</span><span class="status-ok">● ativo</span></div>
-            <div class="obs-row"><span>GitHub Actions CI</span><span class="status-ok">● passando</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-number">02</div>
-        <h3 class="project-name">GeoStream-Recife</h3>
-        <p class="project-context">Plataforma Geoespacial · Streaming de Dados</p>
-        <p class="project-desc">Plataforma web para visualização e análise de dados geoespaciais em tempo real na cidade de Recife. Integra mapas interativos, dados de sensores IoT e dashboards para monitoramento urbano.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">DuckDB</span>
-          <span class="tag">H3 (Uber)</span>
-          <span class="tag">GeoPandas</span>
-          <span class="tag">Plotly</span>
-        </div>
-        <a href="https://github.com/daviaarrudaofc/GeoStream-Recife" target="_blank" class="project-link">Ver no GitHub →</a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-number">03</div>
-        <h3 class="project-name">ACP OO 2026.1</h3>
-        <p class="project-context">Sistema Acadêmico · POO Avançada</p>
-        <p class="project-desc">Sistema de controle acadêmico com gestão de alunos, cursos e notas. Implementado com princípios OOP avançados e expandido com tecnologias modernas — Spring Boot, React e Docker — para uma arquitetura full-stack completa.</p>
-        <div class="project-tags">
-          <span class="tag">Java</span>
-          <span class="tag">JUnit</span>
-        </div>
-        <a href="https://github.com/daviaarruda/ACPOO20261" target="_blank" class="project-link">Ver no GitHub →</a>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project-card reveal reveal-delay-3">
-        <div class="project-number">04</div>
-        <h3 class="project-name">spring-ai-ollama-lab</h3>
-        <p class="project-context">IA Local · Spring AI + Ollama</p>
-        <p class="project-desc">Laboratório para integrar modelos locais via Ollama em uma aplicação Java com Spring AI. O projeto explora chamadas a LLMs, organização de endpoints e uma base prática para criar assistentes e APIs com IA rodando localmente.</p>
-        <div class="project-tags">
-          <span class="tag">Java</span>
-          <span class="tag">Spring AI</span>
-          <span class="tag">Ollama</span>
-          <span class="tag">LLM Local</span>
-        </div>
-        <a href="https://github.com/daviaarrudaofc/spring-ai-ollama-lab" target="_blank" class="project-link">Ver no GitHub →</a>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="project-card reveal">
-        <div class="project-number">05</div>
-        <h3 class="project-name">recife-em-dados</h3>
-        <p class="project-context">Dados Urbanos · Projeto em Desenvolvimento</p>
-        <p class="project-desc">Projeto dedicado a explorar dados públicos da cidade do Recife e transformá-los em informações acessíveis para análise. Uma iniciativa em construção para organizar indicadores urbanos e apoiar a compreensão da cidade por meio de dados.</p>
-        <div class="project-tags">
-          <span class="tag">Open Data</span>
-          <span class="tag">Recife</span>
-          <span class="tag">Dados Urbanos</span>
-          <span class="tag">Em Desenvolvimento</span>
-        </div>
-        <a href="https://github.com/daviaarrudaofc/recife-em-dados" target="_blank" class="project-link">Ver no GitHub →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── TOOLS ── -->
-<section id="tools">
-  <div class="container">
-    <div class="sec-header">
-      <p class="sec-tag reveal">03 / ferramentas</p>
-      <h2 class="sec-title reveal reveal-delay-1">Stack técnico</h2>
-      <p class="sec-sub reveal reveal-delay-2">As principais tecnologias do meu dia a dia — do desenvolvimento à infraestrutura.</p>
-    </div>
-    <div class="tools-grid">
-      <div class="tool-card reveal">
-        <div class="tool-icon">☕</div>
-        <div class="tool-name">Java</div>
-        <div class="tool-level">Backend · Spring</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:80%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-1">
-        <div class="tool-icon">🐍</div>
-        <div class="tool-name">Python</div>
-        <div class="tool-level">Scripts · Automação</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:78%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-2">
-        <div class="tool-icon">🐳</div>
-        <div class="tool-name">Docker</div>
-        <div class="tool-level">Containers · Compose</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:72%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-3">
-        <div class="tool-icon">⚙️</div>
-        <div class="tool-name">GitHub Actions</div>
-        <div class="tool-level">CI/CD · Automação</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:70%"></div></div>
-      </div>
-      <div class="tool-card reveal">
-        <div class="tool-icon">📊</div>
-        <div class="tool-name">Prometheus</div>
-        <div class="tool-level">Monitoramento</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:65%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-1">
-        <div class="tool-icon">📈</div>
-        <div class="tool-name">Grafana</div>
-        <div class="tool-level">Dashboards</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:63%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-2">
-        <div class="tool-icon">🐧</div>
-        <div class="tool-name">Linux</div>
-        <div class="tool-level">Infra · Shell</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:76%"></div></div>
-      </div>
-      <div class="tool-card reveal reveal-delay-3">
-        <div class="tool-icon">☁️</div>
-        <div class="tool-name">AWS</div>
-        <div class="tool-level">Cloud · Em certificação</div>
-        <div class="tool-bar"><div class="tool-fill" style="--w:55%"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ── -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-wrapper">
-      <div class="contact-left">
-        <p class="sec-tag reveal">04 / contato</p>
-        <h2 class="contact-headline reveal reveal-delay-1">Vamos construir<br>algo <span class="accent">juntos?</span></h2>
-        <p class="contact-sub reveal reveal-delay-2">Aberto a oportunidades de estágio, colaborações em projetos open source e conversas sobre DevOps, infraestrutura e desenvolvimento de software.</p>
-        <div class="contact-links reveal reveal-delay-3">
-          <a href="mailto:daviarruda092@gmail.com" class="contact-link">
-            <div class="contact-link-icon">✉️</div>
-            <div class="contact-link-info">
-              <div class="contact-link-label">E-mail</div>
-              <div class="contact-link-value">daviarruda092@gmail.com</div>
+            <a class="project-link" href="https://github.com/daviaarrudaofc/spring-ai-ollama-lab" target="_blank" rel="noopener noreferrer" aria-label="Ver Spring AI + Ollama no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-row">
+            <div class="project-index">02 <span>/ Java + POO</span></div>
+            <div class="project-main">
+              <h3>ACP OO 2026.1</h3>
+              <p>Projeto acadêmico em Java voltado à orientação a objetos, à modelagem de um sistema e à prática de testes.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>Java</li><li>JUnit</li><li>Orientação a objetos</li></ul>
             </div>
-          </a>
-          <a href="https://www.linkedin.com/in/davi-arruda-beltrao" target="_blank" class="contact-link">
-            <div class="contact-link-icon">💼</div>
-            <div class="contact-link-info">
-              <div class="contact-link-label">LinkedIn</div>
-              <div class="contact-link-value">linkedin.com/in/davi-arruda-beltrao</div>
+            <a class="project-link" href="https://github.com/daviaarruda/ACPOO20261" target="_blank" rel="noopener noreferrer" aria-label="Ver ACP OO 2026.1 no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-row">
+            <div class="project-index">03 <span>/ Produto + dados</span></div>
+            <div class="project-main">
+              <h3>Recife em Dados</h3>
+              <p>Dashboard de receitas públicas do Recife com backend próprio. Consulta dados abertos da prefeitura por uma rota com cache e apresenta indicadores para exploração no navegador.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>Node.js</li><li>API de dados abertos</li><li>Docker</li></ul>
+              <div class="project-extra"><a href="https://recife-em-dados.vercel.app" target="_blank" rel="noopener noreferrer">Abrir aplicação ↗</a></div>
             </div>
-          </a>
-          <a href="https://github.com/daviaarrudaofc" target="_blank" class="contact-link">
-            <div class="contact-link-icon">🐙</div>
-            <div class="contact-link-info">
-              <div class="contact-link-label">GitHub</div>
-              <div class="contact-link-value">github.com/daviaarrudaofc</div>
+            <a class="project-link" href="https://github.com/daviaarrudaofc/recife-em-dados" target="_blank" rel="noopener noreferrer" aria-label="Ver Recife em Dados no GitHub">Ver código <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-row">
+            <div class="project-index">04 <span>/ Entrega + observabilidade</span></div>
+            <div class="project-main">
+              <h3>DevOps Pipeline Observability</h3>
+              <p>Ambiente de estudo para conectar integração contínua, containers e observabilidade ao ciclo de desenvolvimento de uma aplicação.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>GitHub Actions</li><li>Docker</li><li>Prometheus</li><li>Grafana</li></ul>
             </div>
-          </a>
+            <a class="project-link" href="https://github.com/daviaarrudaofc/devops-pipeline-observability" target="_blank" rel="noopener noreferrer" aria-label="Ver DevOps Pipeline Observability no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-row">
+            <div class="project-index">05 <span>/ Dados geoespaciais</span></div>
+            <div class="project-main">
+              <h3>GeoStream Recife</h3>
+              <p>Exploração de dados geoespaciais de Recife, com foco em visualização e análise territorial.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>Python</li><li>DuckDB</li><li>GeoPandas</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/daviaarrudaofc/GeoStream-Recife" target="_blank" rel="noopener noreferrer" aria-label="Ver GeoStream Recife no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
       </div>
-      <div class="terminal-box reveal reveal-delay-2">
-        <div class="terminal-bar">
-          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-          <span>terminal — bash</span>
-        </div>
-        <div class="terminal-body">
-          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">whoami</span></div>
-          <div class="t-out">→ Davi Arruda · Software Dev + DevOps</div>
-          <br>
-          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">cat status.txt</span></div>
-          <div class="t-out">→ <span class="t-acc">disponível para estágio</span></div>
-          <br>
-          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">cat certifications.txt</span></div>
-          <div class="t-out">→ AWS Certified Developer <span class="t-acc">[em progresso]</span></div>
-          <br>
-          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">contact --email</span></div>
-          <div class="t-out">→ <span class="t-link">daviarruda092@gmail.com</span></div>
-          <br>
-          <div><span class="t-prompt">~/davi</span> $ <span class="t-cmd">contact --linkedin</span></div>
-          <div class="t-out">→ <span class="t-link">linkedin.com/in/davi-arruda-beltrao</span></div>
-          <br>
-          <div><span class="t-prompt">~/davi</span> $ <span class="cursor-blink"></span></div>
+    </section>
+
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-intro"><p class="eyebrow">03 / Stack</p><h2 id="stack-title">O ecossistema que<br>estou aprofundando<span class="accent">.</span></h2><p class="stack-intro">Da implementação de uma API à proteção, documentação e operação do serviço. Cada camada abaixo representa uma etapa da minha prática atual.</p></div>
+        <div class="stack-layout">
+          <div class="stack-group"><span class="stack-number">01 / Em prática</span><h3>APIs e persistência</h3><p>Java e Spring Boot como base para construir serviços, modelar dados e validar comportamento.</p><ul><li>Java</li><li>Spring Boot</li><li>APIs RESTful</li><li>JPA / Hibernate</li><li>Banco de dados</li><li>JUnit</li><li>Testes de integração</li></ul></div>
+          <div class="stack-group"><span class="stack-number">02 / Em aprofundamento</span><h3>Segurança e identidade</h3><p>Autenticação e autorização para APIs, da proteção de endpoints à identidade federada.</p><ul><li>Spring Security</li><li>OAuth2</li><li>JWT</li><li>Login social</li><li>Authorization Server</li><li>Keycloak</li></ul></div>
+          <div class="stack-group"><span class="stack-number">03 / Próximas entregas</span><h3>Operação e cloud</h3><p>Contratos claros, visibilidade do serviço e um caminho repetível do build ao deploy.</p><ul><li>OpenAPI / Swagger</li><li>Logging</li><li>Spring Boot Actuator</li><li>Docker</li><li>Build em cloud</li><li>AWS</li></ul></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="container">
-    <p>© 2026 <strong>Davi Arruda</strong> · Feito com código, café e muita pipeline ☕ · CESAR School, Recife — <a href="https://github.com/daviaarrudaofc" target="_blank" style="color:var(--accent)">GitHub</a></p>
-  </div>
-</footer>
+    <section class="section direction" id="direcao" aria-labelledby="direction-title">
+      <div class="container direction-layout">
+        <div><p class="eyebrow">04 / Direção</p><h2 id="direction-title">Um backend completo<br>vai além do endpoint<span class="accent">.</span></h2></div>
+        <div class="direction-copy"><p>Quero construir serviços Java com segurança bem definida, documentação útil para quem consome a API e sinais suficientes para entender o que acontece em produção. Essa é a linha que guia meus próximos projetos.</p><p>Estou consolidando Docker e estudando o caminho de build e deploy na AWS. A certificação faz parte dessa jornada de aprendizado, acompanhada de prática em aplicações reais.</p><div class="certification"><span class="certification-label">Meta de certificação</span><strong>AWS Certified Developer – Associate</strong><span>Em preparação.</span></div></div>
+      </div>
+    </section>
 
-<script src="js/scripts.js"></script>
+    <section class="courses" id="cursos" aria-labelledby="courses-title">
+      <div class="container courses-layout">
+        <div class="courses-heading">
+          <p class="eyebrow">05 / Formação complementar</p>
+          <h2 id="courses-title">Estudo contínuo<span class="accent">.</span></h2>
+          <p>Alguns cursos e experiências de formação que acompanham minha prática em backend, dados e cloud.</p>
+        </div>
+        <ul class="courses-list">
+          <li><strong>Java COMPLETO: Programação Orientada a Objetos + Projetos</strong><span>Udemy · 54h · Concluído em 2026</span></li>
+          <li><strong>Banco de Dados SQL do Zero ao Avançado + Projetos Reais</strong><span>Udemy · 8h · Concluído em 2026</span></li>
+          <li><strong>Google Cloud Computing Foundations</strong><span>Mentoria CESAR School · 15h · Participação</span></li>
+          <li><strong>Python</strong><span>Santander Open Academy · 8h · Concluído em 2024</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div><p class="eyebrow">06 / Contato</p><h2 id="contact-title">Vamos conversar<br>sobre software<span class="accent">.</span></h2><p>Aberto a oportunidades de estágio em engenharia de software e backend, além de colaborações em projetos.</p></div>
+        <div class="contact-actions">
+          <a class="contact-primary" href="mailto:daviarruda092@gmail.com">daviarruda092@gmail.com <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/davi-arruda-beltrao" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/daviaarrudaofc" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><span>Davi Arruda © 2026</span><span>Engenharia de Software / Recife, PE</span><a href="#topo">Voltar ao topo ↑</a></div></footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
