@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#17211f" />
-  <meta name="description" content="Portfólio de Davi Arruda. Engenharia de software backend com Java, Spring Boot, APIs RESTful, bancos de dados, segurança e evolução em AWS." />
+  <meta name="description" content="Portfólio de Davi Arruda, estudante de Ciência da Computação focado em backend Java. Conheça a Library API com Spring Boot, PostgreSQL, Spring Security, OAuth2 e JWT." />
   <title>Davi Arruda | Engenharia de Software Backend</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,8 @@
         <p class="eyebrow hero-eyebrow"><span class="signal" aria-hidden="true"></span> Engenharia de software / Recife, PE</p>
         <h1 id="hero-title">Davi<br><span>Arruda.</span></h1>
         <p class="hero-role">Engenharia de software backend<br>com Java no centro.</p>
-        <p class="hero-copy">Estudante de Ciência da Computação na CESAR School. Construo APIs RESTful com Spring Boot, integro aplicações a bancos de dados e pratico testes para transformar ideias em software consistente.</p>
-        <p class="hero-next">Agora avanço em segurança, documentação de APIs, observabilidade e entrega com Docker e AWS.</p>
+        <p class="hero-copy">Estudante de Ciência da Computação na CESAR School, focado em backend Java. Na Library API, construo uma API REST com Spring Boot, PostgreSQL e regras de negócio organizadas em camadas.</p>
+        <p class="hero-next">O projeto já inclui Spring Security, Authorization Server OAuth2, emissão de JWT e login com Google. Agora aprofundo testes, documentação e a operação desse backend.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="https://github.com/daviaarrudaofc" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -50,7 +50,7 @@
       <div class="hero-bottom container" aria-label="Resumo">
         <span>Java &amp; Spring Boot</span>
         <span>APIs RESTful &amp; dados</span>
-        <span>Segurança &amp; cloud em evolução</span>
+        <span>OAuth2 &amp; JWT na prática</span>
       </div>
     </section>
 
@@ -62,14 +62,14 @@
         </div>
         <div class="about-layout">
           <div class="about-lead">
-            <p>Meu foco está no <strong>backend com Java e Spring Boot</strong>. Tenho transformado ideias em APIs RESTful, conectando regras de negócio a bancos de dados e organizando o código para que cada parte tenha uma responsabilidade clara.</p>
-            <p>Na prática, estudo modelagem de domínio, persistência com JPA e Hibernate, contratos HTTP e tratamento de erros. Também venho trabalhando com testes unitários e de integração para verificar o comportamento da aplicação, não apenas fazê-la iniciar.</p>
-            <p>Meu próximo passo é aprofundar a camada de segurança: autenticação e autorização com Spring Security, OAuth2 e JWT, além de login social, Authorization Server e integração entre Spring Boot 4 e Keycloak. Quero levar essas decisões até a documentação, a operação e o deploy.</p>
+            <p>Meu foco está no <strong>backend com Java e Spring Boot</strong>. A Library API é meu principal projeto de prática: gerencio livros e autores por uma API REST, separando controllers, serviços, repositórios, validações e tratamento de erros para manter as regras de negócio claras.</p>
+            <p>Na persistência, trabalho com Spring Data JPA e PostgreSQL; nos testes, exercito cenários de repositório, como regras de autores e ISBN duplicado. É nesse ciclo de implementar, testar e revisar que venho aprofundando modelagem de domínio e contratos HTTP.</p>
+            <p>A segurança também saiu do plano de estudos e entrou no código: implementei login com Google, um Authorization Server OAuth2 e tokens JWT. Explorei os fluxos de credenciais do cliente, código de autorização com PKCE e renovação de tokens, além da validação de um token em um Resource Server separado. Quero evoluir a cobertura de testes, a documentação e a operação antes de avançar para deploy e cloud.</p>
           </div>
           <div class="principles" aria-label="Áreas de prática e estudo">
-            <div class="principle"><span>01</span><div><h3>Construindo agora</h3><p>APIs RESTful, integração com banco de dados e persistência no ecossistema Spring.</p></div></div>
-            <div class="principle"><span>02</span><div><h3>Aprofundando</h3><p>Testes, Spring Security, OAuth2 com JWT, Keycloak e identidade.</p></div></div>
-            <div class="principle"><span>03</span><div><h3>Levando adiante</h3><p>OpenAPI, logs, métricas com Actuator, Docker e deploy em cloud.</p></div></div>
+            <div class="principle"><span>01</span><div><h3>Domínio e dados</h3><p>Livros e autores, regras de negócio, JPA e PostgreSQL na Library API.</p></div></div>
+            <div class="principle"><span>02</span><div><h3>Segurança em prática</h3><p>Spring Security, OAuth2, JWT, login com Google e validação de tokens.</p></div></div>
+            <div class="principle"><span>03</span><div><h3>Próximos passos</h3><p>Mais testes, OpenAPI, logs, métricas, Docker e deploy em cloud.</p></div></div>
           </div>
         </div>
       </div>
@@ -79,26 +79,27 @@
       <div class="container">
         <div class="section-intro section-intro-split">
           <div><p class="eyebrow">02 / Projetos</p><h2 id="projects-title">O que estou<br>construindo<span class="accent">.</span></h2></div>
-          <p>Experimentos, aplicações e sistemas que mostram como transformo estudo em implementação.</p>
+          <p>A Library API concentra meu estudo de backend Java; os demais projetos ampliam a prática em IA, dados e entrega.</p>
         </div>
         <div class="project-list">
           <article class="project-row project-row-featured">
-            <div class="project-index">01 <span>/ Backend + IA</span></div>
+            <div class="project-index">01 <span>/ Backend Java</span></div>
+            <div class="project-main">
+              <h3>Library API</h3>
+              <p>API REST para livros e autores, organizada em controllers, serviços e repositórios, com validações, persistência em Spring Data JPA e PostgreSQL e testes de repositório. Inclui Spring Security, login com Google e um Authorization Server OAuth2 que emite JWT; um Resource Server separado valida os tokens em uma rota protegida.</p>
+              <ul class="project-tags" aria-label="Tecnologias"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Spring Security</li><li>OAuth2 / JWT</li></ul>
+              <div class="project-extra"><a href="https://github.com/daviaarrudaofc/resource_server" target="_blank" rel="noopener noreferrer">Ver Resource Server ↗</a></div>
+            </div>
+            <a class="project-link" href="https://github.com/daviaarrudaofc/libaryApiTeste" target="_blank" rel="noopener noreferrer" aria-label="Ver Library API no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-row">
+            <div class="project-index">02 <span>/ Backend + IA</span></div>
             <div class="project-main">
               <h3>Spring AI + Ollama</h3>
               <p>Um laboratório em Java para integrar modelos locais a uma aplicação com Spring AI. Exploro como expor recursos de IA por meio de uma estrutura de backend.</p>
               <ul class="project-tags" aria-label="Tecnologias"><li>Java</li><li>Spring AI</li><li>Ollama</li></ul>
             </div>
             <a class="project-link" href="https://github.com/daviaarrudaofc/spring-ai-ollama-lab" target="_blank" rel="noopener noreferrer" aria-label="Ver Spring AI + Ollama no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-row">
-            <div class="project-index">02 <span>/ Java + Spring</span></div>
-            <div class="project-main">
-              <h3>Library API</h3>
-              <p>Projeto de estudo em Java e Spring para explorar a organização de uma API em camadas e a implementação de regras de negócio. Estou evoluindo a estrutura do backend enquanto aplico, na prática, os conceitos do ecossistema Spring.</p>
-              <ul class="project-tags" aria-label="Tecnologias"><li>Java</li><li>Spring</li><li>API REST</li><li>Regras de negócio</li></ul>
-            </div>
-            <a class="project-link" href="https://github.com/daviaarrudaofc/libaryApiTeste" target="_blank" rel="noopener noreferrer" aria-label="Ver Library API no GitHub">Ver projeto <span aria-hidden="true">↗</span></a>
           </article>
           <article class="project-row">
             <div class="project-index">03 <span>/ Produto + dados</span></div>
@@ -134,11 +135,11 @@
 
     <section class="section stack" id="stack" aria-labelledby="stack-title">
       <div class="container">
-        <div class="section-intro"><p class="eyebrow">03 / Stack</p><h2 id="stack-title">O ecossistema que<br>estou aprofundando<span class="accent">.</span></h2><p class="stack-intro">Da implementação de uma API à proteção, documentação e operação do serviço. Cada camada abaixo representa uma etapa da minha prática atual.</p></div>
+        <div class="section-intro"><p class="eyebrow">03 / Stack</p><h2 id="stack-title">O ecossistema que<br>estou aprofundando<span class="accent">.</span></h2><p class="stack-intro">Dados e segurança já fazem parte da Library API. Documentação, observabilidade e cloud são os próximos passos dessa evolução.</p></div>
         <div class="stack-layout">
-          <div class="stack-group"><span class="stack-number">01 / Em prática</span><h3>APIs e persistência</h3><p>Java e Spring Boot como base para construir serviços, modelar dados e validar comportamento.</p><ul><li>Java</li><li>Spring Boot</li><li>APIs RESTful</li><li>JPA / Hibernate</li><li>Banco de dados</li><li>JUnit</li><li>Testes de integração</li></ul></div>
-          <div class="stack-group"><span class="stack-number">02 / Em aprofundamento</span><h3>Segurança e identidade</h3><p>Autenticação e autorização para APIs, da proteção de endpoints à identidade federada.</p><ul><li>Spring Security</li><li>OAuth2</li><li>JWT</li><li>Login social</li><li>Authorization Server</li><li>Keycloak</li></ul></div>
-          <div class="stack-group"><span class="stack-number">03 / Próximas entregas</span><h3>Operação e cloud</h3><p>Contratos claros, visibilidade do serviço e um caminho repetível do build ao deploy.</p><ul><li>OpenAPI / Swagger</li><li>Logging</li><li>Spring Boot Actuator</li><li>Docker</li><li>Build em cloud</li><li>AWS</li></ul></div>
+          <div class="stack-group"><span class="stack-number">01 / Em prática</span><h3>APIs e persistência</h3><p>Serviços Java com regras de negócio, dados persistidos e testes de repositório.</p><ul><li>Java 21</li><li>Spring Boot</li><li>APIs RESTful</li><li>Spring Data JPA</li><li>PostgreSQL</li><li>Testes de repositório</li></ul></div>
+          <div class="stack-group"><span class="stack-number">02 / Em prática</span><h3>Segurança e identidade</h3><p>Autenticação, emissão e validação de tokens em aplicações Spring.</p><ul><li>Spring Security</li><li>Authorization Server</li><li>OAuth2 / PKCE</li><li>JWT</li><li>Login com Google</li><li>Resource Server</li></ul></div>
+          <div class="stack-group"><span class="stack-number">03 / Em estudo</span><h3>Operação e cloud</h3><p>Documentar, observar e entregar o serviço de forma repetível.</p><ul><li>OpenAPI / Swagger</li><li>Logging</li><li>Spring Boot Actuator</li><li>Docker</li><li>Keycloak</li><li>AWS</li></ul></div>
         </div>
       </div>
     </section>
@@ -146,7 +147,7 @@
     <section class="section direction" id="direcao" aria-labelledby="direction-title">
       <div class="container direction-layout">
         <div><p class="eyebrow">04 / Direção</p><h2 id="direction-title">Um backend completo<br>vai além do endpoint<span class="accent">.</span></h2></div>
-        <div class="direction-copy"><p>Quero construir serviços Java com segurança bem definida, documentação útil para quem consome a API e sinais suficientes para entender o que acontece em produção. Essa é a linha que guia meus próximos projetos.</p><p>Estou consolidando Docker e estudando o caminho de build e deploy na AWS. A certificação faz parte dessa jornada de aprendizado, acompanhada de prática em aplicações reais.</p><div class="certification"><span class="certification-label">Meta de certificação</span><strong>AWS Certified Developer – Associate</strong><span>Em preparação.</span></div></div>
+        <div class="direction-copy"><p>Com a Library API, já pratico persistência, regras de negócio e fluxos de autenticação OAuth2. O próximo desafio é ampliar os testes, documentar os contratos da API e acompanhar seu comportamento com logs e métricas.</p><p>Também estudo Docker, Keycloak e o caminho de build e deploy na AWS. A certificação faz parte dessa jornada de aprendizado, apoiada em projetos reais.</p><div class="certification"><span class="certification-label">Meta de certificação</span><strong>AWS Certified Developer – Associate</strong><span>Em preparação.</span></div></div>
       </div>
     </section>
 
